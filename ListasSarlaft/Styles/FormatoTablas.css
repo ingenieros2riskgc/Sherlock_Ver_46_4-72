@@ -1,0 +1,32 @@
+﻿    body
+{
+}
+    .tabla
+{
+    border-color: White;
+    border-bottom-color: White;
+    border-left-color: White;
+    border-right-color: White;
+    border-collapse: collapse;
+    padding: 1px;
+    border: 1px solid;
+    border-spacing: 0px;
+}
+    .tabla tbody td
+{
+    border-color: White;
+    padding: 1px;
+    border: 2px solid White;
+    border-spacing: 0px;
+}
+    .tablaSinBordes
+{
+    border: hidden;
+    border: 0;
+    vertical-align: middle;    
+}
+    .tablaSinBordes tbody td
+{
+    border: hidden;
+    border: 0;
+}  

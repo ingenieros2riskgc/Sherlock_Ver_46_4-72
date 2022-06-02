@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListasSarlaft", "ListasSarlaft\ListasSarlaft.csproj", "{B2D5A845-570F-4551-B331-3F103A92F45B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "clsDatos\DAL.csproj", "{D0981E20-7B7A-491E-A4AA-CCD9645ADBDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "clsDTO\DTO.csproj", "{0A52978B-3A70-4FC2-B5F3-884E76BBC3D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL", "clsLogica\DLL.csproj", "{79D73723-DBDB-44D6-AB0C-AD74EFEB6AA6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://67.210.244.157:8585/tfs/rcc_collections
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ListasSarlaft\\ListasSarlaft.csproj
+		SccProjectName1 = ListasSarlaft
+		SccLocalPath1 = ListasSarlaft
+		SccProjectUniqueName2 = clsDatos\\DAL.csproj
+		SccProjectName2 = clsDatos
+		SccLocalPath2 = clsDatos
+		SccProjectUniqueName3 = clsDTO\\DTO.csproj
+		SccProjectName3 = clsDTO
+		SccLocalPath3 = clsDTO
+		SccProjectUniqueName4 = clsLogica\\DLL.csproj
+		SccProjectName4 = clsLogica
+		SccLocalPath4 = clsLogica
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2D5A845-570F-4551-B331-3F103A92F45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D5A845-570F-4551-B331-3F103A92F45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D5A845-570F-4551-B331-3F103A92F45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D5A845-570F-4551-B331-3F103A92F45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0981E20-7B7A-491E-A4AA-CCD9645ADBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0981E20-7B7A-491E-A4AA-CCD9645ADBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0981E20-7B7A-491E-A4AA-CCD9645ADBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0981E20-7B7A-491E-A4AA-CCD9645ADBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A52978B-3A70-4FC2-B5F3-884E76BBC3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A52978B-3A70-4FC2-B5F3-884E76BBC3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A52978B-3A70-4FC2-B5F3-884E76BBC3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A52978B-3A70-4FC2-B5F3-884E76BBC3D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D73723-DBDB-44D6-AB0C-AD74EFEB6AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D73723-DBDB-44D6-AB0C-AD74EFEB6AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D73723-DBDB-44D6-AB0C-AD74EFEB6AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D73723-DBDB-44D6-AB0C-AD74EFEB6AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

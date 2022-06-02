@@ -1,0 +1,94 @@
+﻿.TituloLabel {
+    text-align: center;
+    background: #333399;
+}
+
+.ColumnStyle {
+    background: #EEEEEE;
+    text-align: center;
+    align-content: center;
+    display: block;
+    margin: 0 auto;
+}
+.GridDataWrap {
+    word-wrap: break-word;
+    //I.E. only
+}
+
+.TableContains {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.RowsText {
+    text-align: "left";
+    background-color: #BBBBBB;
+}
+
+.popup {
+    border: Silver 1px solid;
+    color: #060F40;
+    background: #ffffff;
+}
+
+body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.Grid td {
+    background-color: #A1DCF2;
+    color: black;
+    font-size: 10pt;
+    line-height: 200%
+}
+
+.Grid th {
+    background-color: #3AC0F2;
+    color: White;
+    font-size: 10pt;
+    line-height: 200%
+}
+
+.ChildGrid td {
+    background-color: #eee !important;
+    color: black;
+    font-size: 10pt;
+    line-height: 200%
+}
+
+.ChildGrid th {
+    background-color: #6C6C6C !important;
+    color: White;
+    font-size: 10pt;
+    line-height: 200%
+}
+
+.buttonClass {
+    font-size: small;
+}
+
+    .buttonClass:hover {
+        font-size: XX-Large;
+    }
+
+.buttonClassNumber {
+    font-size: XX-Large;
+}
+
+.LabelClass {
+    Font-Size: small;
+    font-family: Calibri;
+}
+
+.no-visible {
+    display: none
+}
+
+.center-content {
+    display: block;
+    margin: 0 auto;
+    width: 72%;
+    background: #EEEEEE;
+}

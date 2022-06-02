@@ -1,0 +1,58 @@
+﻿.font
+{   font-family: Cambria;
+    font-size: medium;    
+}
+
+.body
+{   margin: 0;
+	padding: 0;	
+}
+
+.twoColHybLtHdr #header
+{   padding: 0 10px;    
+    background-image: url('../Imagenes/MastersPages/header.png');
+	background-repeat: repeat-x;
+}
+
+.twoColHybLtHdr #header h1
+{   margin: 0;
+	padding: 10px 0;
+}
+
+.twoColHybLtHdr #sidebar1
+{   float: left;
+	width: 14em;
+	padding: 15px 0;
+	background-image: url('../Imagenes/MastersPages/sidebar1.jpg');
+	background-repeat: repeat-y;
+}
+
+.twoColHybLtHdr #sidebar1 h3, .twoColHybLtHdr #sidebar1 p
+{   margin-left: 10px;
+	margin-right: 10px;
+}
+
+.twoColHybLtHdr #mainContent
+{   margin: 0 20px 0 13em;    
+    background-image: url('../Imagenes/MastersPages/mainContent.jpg');
+	background-repeat: no-repeat;
+} 
+
+.clearfloat
+{   clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.twoColHybLtHdr #footer
+{   padding: 0 10px;
+    background-image: url('../Imagenes/MastersPages/footer.jpg');
+	background-repeat: repeat-x;
+}
+
+.twoColHybLtHdr #footer p
+{   margin: 0;
+	padding: 10px 0;
+}
+

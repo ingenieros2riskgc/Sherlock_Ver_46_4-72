@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sitio.master.cs" Inherits="ListasSarlaft.MastersPages.Sitio" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="CCCA" TagName="Cabecera" Src="~/UserControls/Sitio/Cabecera.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Imagenes/Iconos/SherlockIco.ico">
+    <link href="../Styles/MastersPages.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <table width="100%" align="center">
+            <tr>
+                <td>
+                    <div class="twoColHybLtHdr">
+                        <div id="header">
+                            <table align="center" width="100%">
+                                <tr>
+                                    <td>
+                                        <CCCA:Cabecera ID="Cabecera1" runat="server" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table width="100%">
+                            <tr style="width: 100%;">
+                                <td id="mainContent" valign="top">
+                                    <table width="100%" align="center">
+                                        <tr>
+                                            <td>
+                                                <h3>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="mainContent" valign="top">
+                                    <table width="100%">
+                                        <tr>
+                                            <td>
+                                                <h1>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </h1>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h2>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>
+                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <tr align="center">
+                            <td align="center">
+                                <label style="font-family:Calibri; font-size:small; color:darkblue">Copyright © <%=DateTime.Now.Year.ToString() %> Risk Consulting Colombia | Sherlock Versión 4.6 | Se recomienda utilizar versiones iguales o superiores a: Internet Explorer 7.0, Firefox 3.0, Chrome 12.0, Safari 5.0 en una resolución de 1024 x 768 o superior</label>
+                                .
+                                <asp:Label ID="Label8" runat="server" Text=""
+                                    Font-Names="Calibri" Font-Size="Small" ForeColor="DarkBlue"></asp:Label>
+                            </td>
+                        </tr>
+                        <br class="clearfloat" />
+                        <div id="footer" align="center">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

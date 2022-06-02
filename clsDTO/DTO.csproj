@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A52978B-3A70-4FC2-B5F3-884E76BBC3D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>clsDTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>DTO.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArchivoSegmentacion.cs" />
+    <Compile Include="CabeceroArchivo.cs" />
+    <Compile Include="clsDTOConfigPerfil.cs" />
+    <Compile Include="clsDTOArchivo.cs" />
+    <Compile Include="clsDTOEstructuraCampoCreate.cs" />
+    <Compile Include="clsDTOEstructuraCampoMod.cs" />
+    <Compile Include="clsDTOFactorRiesgoMod.cs" />
+    <Compile Include="clsDTOFactorRiesgo.cs" />
+    <Compile Include="clsDTOActualizarGestionRequerimientos.cs" />
+    <Compile Include="clsDTOGestionUsuarios.cs" />
+    <Compile Include="clsDTOHistoricoCalculoPerfil.cs" />
+    <Compile Include="clsDTOParametrizacionCreate.cs" />
+    <Compile Include="clsDTOParametrizacionMod.cs" />
+    <Compile Include="clsDTOParametrizacion.cs" />
+    <Compile Include="clsDTORegistroComentarios.cs" />
+    <Compile Include="clsDTORegistroEvidencias.cs" />
+    <Compile Include="clsDTOGestionGrupos.cs" />
+    <Compile Include="clsDTOGestionRequerimientos.cs" />
+    <Compile Include="clsDTOReporteRequerimientos.cs" />
+    <Compile Include="clsDTORegistroRequerimientos.cs" />
+    <Compile Include="clsDTOPerfilCreate.cs" />
+    <Compile Include="clsDTOPerfilMod.cs" />
+    <Compile Include="clsDTOPerfil.cs" />
+    <Compile Include="clsDTOPerfilVariable.cs" />
+    <Compile Include="clsDTORelacion.cs" />
+    <Compile Include="clsDTOConsulSenalMod.cs" />
+    <Compile Include="clsDTOSenalMod.cs" />
+    <Compile Include="clsDTOSenal.cs" />
+    <Compile Include="clsDTOTipoDato.cs" />
+    <Compile Include="clsDTOVariableCreate.cs" />
+    <Compile Include="clsDTOVariableMod.cs" />
+    <Compile Include="clsDTOVariable.cs" />
+    <Compile Include="clsDTOEstructuraCampo.cs" />
+    <Compile Include="ComparacionArchivo.cs" />
+    <Compile Include="InfoArchivoSegmentacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalidaDetalleCalificacion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DTO.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

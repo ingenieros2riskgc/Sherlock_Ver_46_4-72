@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using ListasSarlaft.Classes;
+
+namespace ListasSarlaft.Formularios.Sitio
+{
+    public partial class Login : System.Web.UI.Page
+    {
+        private cCuenta cCuenta = new cCuenta();
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!Page.IsPostBack)
+            {
+                cCuenta.notAuthenticated();
+            }           
+        }
+    }
+}

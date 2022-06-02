@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ListasSarlaft.MastersPages.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="CCCA" TagName="Cabecera" Src="~/UserControls/Sitio/Cabecera.ascx" %>
+<%@ Register TagPrefix="CCMA" TagName="MenuAdmin" Src="~/UserControls/Sitio/MenuAdmin.ascx" %>
+<%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajax" %>--%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style type="text/css">
+    #Background
+    {
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        background: #EEEEEE;
+        filter: alpha(opacity=80);
+        opacity: 0.8;
+        z-index: 100000;
+    }
+
+    #Progress
+    {
+        position: fixed;
+        top: 40%;
+        left: 40%;
+        height: 10%;
+        width: 20%;
+        z-index: 100001;
+        background-color: #FFFFFF;
+        border: 1px solid Gray;
+        background-image: url('./Imagenes/Icons/loading.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+</style>
+<head id="Head1" runat="server">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Imagenes/Iconos/SherlockIco.ico" />
+    <link href="../Styles/MastersPages.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/MyStyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/FormatoTablas.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/FormatoPopUp.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src='<%# ResolveUrl("~/Scripts/jquery-1.9.1.js")%>'></script>
+    <link href="../Styles/AdminSitio.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="600">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <table width="100%">
+                    <tr>
+                        <td align="center">
+                            <asp:UpdateProgress ID="UpdateProgress4" runat="server" AssociatedUpdatePanelID="UpdatePanel1"
+                                DisplayAfter="0">
+                                <ProgressTemplate>
+                                    <div id="Background">
+                                    </div>
+                                    <div id="Progress">
+                                        <asp:Label ID="Lbl11" runat="server" Text="Procesando, por favor espere..." Font-Names="Calibri"
+                                            Font-Size="Small"></asp:Label>
+                                        <br />
+                                        <asp:Image ID="Img11" runat="server" ImageUrl="~/Imagenes/Icons/loading.gif" />
+                                    </div>
+                                </ProgressTemplate>
+                            </asp:UpdateProgress>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="twoColHybLtHdr">
+                                <div id="header">
+                                    <table align="center" width="100%" bgcolor="#D2D3D5">
+                                        <tr>
+                                            <td>
+                                                <CCCA:Cabecera ID="Cabecera1" runat="server" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <CCMA:MenuAdmin ID="MenuAdmin" runat="server" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <table width="100%">
+                                    <tr style="width: 100%;">
+                                        <td id="mainContent" valign="top">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <h3>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </h3>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="mainContent" valign="top">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <h1>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </h1>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <h2>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </h2>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p>
+                                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                                                            </asp:ContentPlaceHolder>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <tr align="center">
+                                    <td align="center">
+                                        <label style="font-family:Calibri; font-size:small; color:darkblue">Copyright © <%=DateTime.Now.Year.ToString() %> Risk Consulting Colombia | Sherlock Versión 4.6 | Se recomienda utilizar versiones iguales o superiores a: Internet Explorer 7.0, Firefox 3.0, Chrome 12.0, Safari 5.0 en una resolución de 1024 x 768 o superior</label>
+                                    </td>
+                                </tr>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </form>
+</body>
+</html>
